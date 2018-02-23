@@ -1,0 +1,3 @@
+[submodule "i3ipc-qt"]
+	path = i3ipc-qt
+	url = https://github.com/dkopecek/i3ipc-qt.git

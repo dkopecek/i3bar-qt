@@ -1,0 +1,114 @@
+* {
+background: #111111;
+color: #abcdef;
+}
+
+QWidget {
+}
+
+QPushButton#workspace_button {
+border: 1px solid #555555;
+}
+
+QLabel#datetime_label {
+color: #abcdef;
+}
+
+QLineEdit#top_lineedit {
+color: #eeeeee;
+background: #123456;
+}
+
+QTabWidget::pane { /* The tab widget frame */
+border-top: 2px solid #C2C7CB;
+position: absolute;
+bottom: -0.5em;
+}
+
+QTabWidget::tab-bar {
+alignment: center;
+}
+
+/* Style the tab using the tab sub-control. Note that
+it reads QTabBar _not_ QTabWidget */
+QTabBar::tab {
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+border: 2px solid #C4C4C3;
+border-bottom-color: #C2C7CB; /* same as the pane color */
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+min-width: 8ex;
+padding: 2px;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+stop: 0 #fafafa, stop: 0.4 #f4f4f4,
+stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);
+}
+
+QTabBar::tab:selected {
+border-color: #9B9B9B;
+border-bottom-color: #C2C7CB; /* same as pane color */
+}
+
+QTabBar::tab::!selected {
+margin-bottom: 1em;
+}
+
+QTextBrowser {
+color: #ffffff;
+background: #333333;
+}
+
+QScrollBar:horizontal {
+border: 2px solid grey;
+background: #32CC99;
+height: 15px;
+margin: 0px 20px 0 20px;
+}
+
+QScrollBar::handle:horizontal {
+background: white;
+min-width: 20px;
+}
+
+QScrollBar::add-line:horizontal {
+border: 2px solid grey;
+background: #32CC99;
+width: 20px;
+subcontrol-position: right;
+subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal {
+border: 2px solid grey;
+background: #32CC99;
+width: 20px;
+subcontrol-position: left;
+subcontrol-origin: margin;
+}
+
+QScrollBar:left-arrow:horizontal {
+border: 2px solid grey;
+width: 3px;
+height: 3px;
+background: white;
+}
+
+QScrollBar::right-arrow:horizontal {
+border: 2px solid grey;
+width: 3px;
+height: 3px;
+background: white;
+}
+
+QScrollBar::add-page:horizontal {
+background: none;
+}
+
+QScrollBar::sub-page:horizontal {
+background: none;
+}
