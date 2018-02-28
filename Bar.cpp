@@ -2,6 +2,7 @@
 #include "ui_Bar.h"
 
 #include "CalendarWidget.hpp"
+#include "ScratchpadWidget.hpp"
 
 #include <QDateTime>
 #include <QCursor>
@@ -30,6 +31,7 @@ Bar::Bar(i3ipc& i3_ipc, QWidget *parent) :
     _datetime_timer.start();
 
     addBarWidget(new CalendarWidget());
+    addBarWidget(new ScratchpadWidget());
 }
 
 Bar::~Bar()

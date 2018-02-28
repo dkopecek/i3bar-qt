@@ -17,17 +17,20 @@ SOURCES += main.cpp\
         Bar.cpp \
     BarManager.cpp \
     BarWidget.cpp \
-    CalendarWidget.cpp
+    CalendarWidget.cpp \
+    ScratchpadWidget.cpp
 
 HEADERS  += Bar.hpp \
     i3ipc-qt/i3ipc.hpp \
     BarManager.hpp \
     BarWidget.hpp \
-    CalendarWidget.hpp
+    CalendarWidget.hpp \
+    ScratchpadWidget.hpp
 
 FORMS    += \
     Bar.ui \
-    CalendarWidget.ui
+    CalendarWidget.ui \
+    ScratchpadWidget.ui
 
 DISTFILES += \
     i3bar-qt.qss
